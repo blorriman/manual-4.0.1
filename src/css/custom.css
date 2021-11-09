@@ -1,3 +1,4 @@
+/* stylelint-disable docusaurus/copyright-header */
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,23 +7,164 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+	--ifm-color-primary: #00bcd4;
+	--ifm-color-primary-dark: #00acc1;
+	--ifm-color-primary-darker: #00838f;
+	--ifm-color-primary-darkest: #006064;
+	--ifm-color-primary-light: #26c6da;
+	--ifm-color-primary-lighter: #4dd0e1;
+	--ifm-color-primary-lightest: #80deea;
+
+	--ifm-color-info-contrast-foreground: #cccccc;
+
+	--ifm-blockquote-background-color: #ffffff;
+	--ifm-blockquote-foreground-color: #546E7A;
+	--ifm-blockquote-border-color: #90A4AE;
+
+	--ifm-color-success: #43a047;
+	--ifm-color-info: #00acc1;
+	--ifm-color-warning: #ffa000;
+	--ifm-color-danger: #e53935;
+
+	--ra-color-note: var(--ifm-color-secondary);
+  --ra-color-important: var(--ifm-color-info);
+  --ra-color-tip: var(--ifm-color-success);
+  --ra-color-caution: var(--ifm-color-warning);
+  --ra-color-warning: var(--ifm-color-danger);
+  --ra-color-text-dark: var(--ifm-color-gray-900);
+
+	--ifm-code-font-size: 90%;
+	--ifm-font-color-base: #616161;
+
+	--ifm-heading-font-weight: 400;
+	--ifm-heading-line-height: 1;
+	--ifm-h1-font-size: 2rem
+	--ifm-h2-font-size: 1rem
+	
+}
+
+h1 { font-size: 2rem;}
+h2 { font-size: 1.5rem;}
+h3 { font-size: 1.25rem;}
+
+a { 
+	color: #1565C0;
+	text-decoration: none;
+}
+a:hover {
+	color: #2196F3;
+	text-decoration: underline;
+}
+
+.error {color: red}
+
+.red-highlight {
+	/* border: 2px solid red; */
+	padding: 10px;
+	color: red;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+	background-color: rgb(72, 77, 91);
+	display: block;
+	margin: 0 calc(-1 * var(--ifm-pre-padding));
+	padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
+.alert {
+	background-color: var(--ifm-background-surface-color);
+	border-color: var(--ifm-alert-border-color);
+	color: var(--ifm-alert-border-color);
 }
+
+alert a {
+	color: var(--ifm-color-primary);
+	text-decoration: var(--ifm-link-decoration);
+} 
+
+.alert .admonition-heading {
+	color: var(--ifm-alert-border-color);
+}
+
+.admonition-icon svg {
+	fill: var(--ifm-alert-border-color);
+	stroke: var(--ifm-alert-border-color);
+	margin-right: 12px;
+} 
+
+.admonition {
+	border: none;
+	/* background-color: var(--ifm-color-emphasis-100); */
+	background-color: #FAFAFA;
+	/* border-radius: 0; */
+	border-left-width: 0.3rem;
+	border-left-style: solid;
+	border-color: var(--ifm-alert-border-color);
+}
+
+details {
+	background-color: var(--ifm-color-emphasis-100);
+	border-radius: 0;
+	border-left-width: 0.3rem;
+	border-left-style: solid;
+	border-color: var(--ifm-color-emphasis-900);
+	padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
+	margin-bottom: 1em;
+}
+
+summary {
+	outline: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+details[open] summary {
+	margin-bottom: 1em;
+}
+
+.alert--secondary {
+	--ifm-alert-background-color: var(--ifm-color-emphasis-900);
+	--ifm-alert-border-color: var(--ifm-color-emphasis-900);
+}
+
+.docusaurus-highlight-code-line {
+	background-color: rgb(72, 77, 91);
+	display: block;
+	margin: 0 calc(-1 * var(--ifm-pre-padding));
+	padding: 0 var(--ifm-pre-padding);
+}
+
+.indent {
+	margin-left: 20px;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 5rem;
+}
+
+@media screen and (max-width: 996px) {
+	:root {
+		--ifm-font-size-base: 18px;
+	}
+	article header h1 {
+		font-size: 1.5rem !important;
+	}
+	.hero .hero__title {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 997px) {
+	:root {
+		--ifm-font-size-base: 17px;
+	}
+	article header h1 {
+		font-size: 2rem !important;
+	}
+	.blogPostTitle {
+		font-size: 2rem !important;
+	}
+}
+
