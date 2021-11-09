@@ -1,0 +1,46 @@
+---
+sidebar_position: 4
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Affiliate Groups
+
+**Affiliate Groups** are connected as **Parent Group** and **Child Groups** _(Sub Committees)_. A Parent Group can have as many Sub Committees as needed, and Sub Committees are connected to each other as **Siblings**.
+
+<center>
+	<img src={useBaseUrl('/img/administration/affiliateDiagram.png')} />
+</center>
+
+The advantages of **Affiliate Groups** are that the **Admin** of each Group can email members of any Affliate Group, as well as **Refer** [Discussions](../discussions/extend#refer-a-discussion) and [Motions](../meetings/motions#referral-motion) to Affiliate Groups.
+
+:::caution Caution
+If a Child Group _(Sub Committee)_ creates Sub Committees _(ie: grandchildren)_, these Sub Committees are **NOT** included in the original **Affilate Group**, but rather form their own _(second tier)_ Affilate Group.
+:::
+
+## Sub Committees
+
+Any Group Admin can create as many **Sub Committees** as required. Examples of Sub Committees would be **Financial Committee**, **Governance Committee**, etc.
+
+To create a Sub Committee:
+
+> 1. Open the **Admin** tab.
+> 1. Open **Add Group Committees**.
+> 1. Enter the **Name** of the new Group.
+
+<center>
+	<img src={useBaseUrl('/img/administration/sub-1.gif')} />
+</center>
+
+## General Membership Group
+
+**General Membership Groups** are usually larger than boards or committees. The main difference is that only Members with Admin access can start Discussions, Meetings, etc.
+
+<center>
+	<img src={useBaseUrl('/img/administration/gm-1.gif')} />
+</center>
+
+:::warning Warning
+**LORROS** is designed for **Boards** and **Committees** and works best with smaller Groups.
+If you add a large **General Membership Committee** you may experience some sluggish performance across all AffilateGroups.
+:::

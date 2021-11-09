@@ -1,0 +1,120 @@
+---
+sidebar_position: 3
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import AddFiles from '../../global/addFiles.mdx'
+import AddPolls from '../../global/addPolls.mdx'
+import VotePolls from '../../global/votePolls.mdx'
+import AddAction from '../../global/addAction.mdx'
+import OptinOut from '../../global/optInOut.mdx'
+import Expanding from '../../global/expanding.mdx'
+import Sorting from '../../global/sorting.mdx'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+
+# Discussion Home Page
+
+## Discussion Heading Tabs
+
+:::success Info
+**Notices** - You will recieve an email from **LORROS** when an **Discussion** starts, the day before it ends and when it is completed _(you cannot mute Notices)_.
+
+**Messages** - You will recieve an email from **LORROS** everytime a Member makes a Comment or Reply _(you can [mute Messages](#mute-emails))_
+:::
+
+:::caution Attention
+A **Discussion** can be deleted by **Admin**, or the creator of the Discussion prior to Comments being added.
+:::
+
+At the top of the **Discussion**, you will find a tab for **Files** _(if there are any Files)
+_ and the **Print** tab.
+
+### Files
+
+All **Files** for the Discussion can be accessed from the Files tab.
+
+<center>
+	<img src={useBaseUrl('/img/global/openFiles.gif')} />
+</center>
+
+### Print
+
+You can print out the Discussion at any time using the **Print** tab at the top of the Discussion.
+
+<center>
+	<img src={useBaseUrl('/img/global/print.gif')} />
+</center>
+
+## Comments & Replies
+
+### Adding Comments
+
+**Comments** should be relative to the **Discussion** _(**Replies** should be specific to a **Comment**)_.
+
+<center>
+	<img src={useBaseUrl('/img/global/addingComments-2.gif')} />
+</center>
+
+### Add Files
+
+<AddFiles />
+
+---
+
+<!-- Simply click the **Add File** tab and follow the instructions.
+
+<img src={useBaseUrl('/img/global/addFiles-2.gif')} />
+
+The **Files** are accessible from both the Files tab at the top of the Discussion as well as the Paper Clip icon next to the Comment. -->
+
+### Adding Replies
+
+When Replying to a Comment, you will see the Reply To This Comment tab. When you have added your Reply, you can also [add Files](#add-files) before submitting your Reply.
+
+<center>
+	<img src={useBaseUrl('/img/global/addingReplies-2.gif')} />
+</center>
+
+### Reviewing Comments & Replies
+
+<Tabs>
+	<TabItem value='apple' label='Expanding' default>
+		<Expanding />
+	</TabItem>
+	<TabItem value='orange' label='Sorting'>
+		<Sorting />
+	</TabItem>
+</Tabs>
+
+### Mute emails
+
+<OptinOut />
+
+<!-- ### Add Files
+
+Simply click the **Add File** tab and follow the instructions.
+
+<center>
+	<img src={useBaseUrl('/img/global/addFiles.gif')} />
+</center>
+
+The **Files** are accessible from both the Files tab at the top of the as well as the Paper Clip icon next to the Comment. -->
+
+---
+
+### Adding Polls
+
+Adding **Polls** to Discussions are a great way to find common ground and keep the Discussion moving in a productive direction.
+
+<AddPolls />
+
+### Voting in Polls
+
+<VotePolls />
+
+---
+
+## Add An Action
+
+<AddAction />

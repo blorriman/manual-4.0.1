@@ -1,0 +1,80 @@
+---
+sidebar_position: 6
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import OptinOut from '../global/optInOut.mdx'
+import AddFiles from '../global/addFiles.mdx'
+
+# Actions
+
+**Actions** are items that are assigned to a Group Member and given a target date. All Members of the Group can see the Action and add Comments/Replies to help move tha Action along.
+
+:::success Info
+**Notices** - You will recieve an email from **LORROS** when an **Action** starts and when it is completed _(you cannot mute Notices)_.
+
+**Messages** - You will recieve an email from **LORROS** everytime a Member makes a Comment or Reply _(you can [mute Messages](#mute-emails))_
+:::
+
+## Starting an Action
+
+An **Action** can be started by any Group Member.
+
+<center>
+	<img src={useBaseUrl('/img/global/addAction.gif')} />
+</center>
+
+## Reporting Progress
+
+The Group Member **asigned** the Action, or any other Group Member can add Comments/Replies at any time that the Action is in progress.
+
+## Comments & Replies
+
+### Adding Comments
+
+**Comments** should be relative to the **Action** _(**Replies** should be specific to a **Comment**)_.
+
+<center>
+	<img src={useBaseUrl('/img/global/addingComments-2.gif')} />
+</center>
+
+### Add Files
+
+<AddFiles />
+
+---
+
+<!-- Simply click the **Add File** tab and follow the instructions.
+
+<center>
+	<img src={useBaseUrl('/img/global/addFiles-2.gif')} />
+</center>
+
+The **Files** are accessible from both the Files tab at the top of the Action as well as the Paper Clip icon next to the Comment. -->
+
+### Adding Replies
+
+When Replying to a Comment, you will see the Reply To This Comment tab. When you have added your Reply, you can also [add Files](#add-files) before submitting your Reply.
+
+<center>
+	<img src={useBaseUrl('/img/global/addingReplies-2.gif')} />
+</center>
+
+### Reviewing Comments & Replies
+
+<Tabs>
+	<TabItem value='apple' label='Expanding' default>
+		<Expanding />
+	</TabItem>
+	<TabItem value='orange' label='Sorting'>
+		<Sorting />
+	</TabItem>
+</Tabs>
+
+### Mute emails
+
+<OptinOut />
+
+## Completing an Action
+
+The **assigned** Group Member, or the Group Admin can click the **Click to Complete Action** button when the Action is completed.
