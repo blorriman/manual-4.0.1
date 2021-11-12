@@ -6,10 +6,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # Proxy Votes
 
-<div className='red-highlight'>
-	Bacon ipsum dolor amet chuck kielbasa beef ribs ham pastrami, chislic
-	burgdoggen short ribs meatball frankfurter. Fatback pork chop picanha jowl.
-	Landjaeger jerky swine buffalo pancetta turkey beef pastrami boudin. Meatball
-	brisket pork chop pig swine hamburger tenderloin filet mignon tail. Leberkas
-	salami tri-tip hamburger tenderloin boudin.
-</div>
+**Proxy Votes** are available to the Group **Admin**. The Group Admin can Move, Second and Vote on any Motion as a Proxy from another Voting Member. Proxy Votes are marked with an asterisks '**\***' and on hover will display who Voted the Proxy Vote.
+
+<center>
+	<img src={useBaseUrl('/img/administration/meetings/proxy-1.gif')} />
+</center>
+
+## Not Present
+
+The Admin can also mark a Member as **Not Present**; however, if a Member has Moved or Seconded _(even if by Proxy)_ they cannot be marked as Not Present.
+
+:::warning Attention
+A Member marked as Not Present may affect the ability of the Motion to reach Quorum and therefore should be considered carefully by the Admin.
+:::
+
+<!--
+A Member marked as Not Present is treated the same as **Abstained**. Not Present Member is NOT counted as a vote cast and therefore not included in the vote total and therefore should be considered carefully by the Admin. -->
