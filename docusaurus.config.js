@@ -54,7 +54,7 @@ module.exports = {
 				},
 				blog: {
 					showReadingTime: true,
-					blogSidebarTitle: 'Helpful Articles',
+					blogSidebarTitle: 'Best Practices',
 					// Please change this to your repo.
 					// editUrl:
 					// 	'https://github.com/facebook/docusaurus/edit/master/website/blog/',
