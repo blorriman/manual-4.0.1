@@ -20,7 +20,7 @@ const FeatureList = [
 		description: (
 			<>
 				Getting Group members (committees, boards, etc.) together for meetings
-				can often be a daunting task. LORROS is online an available all the
+				can often be a daunting task. LORROS is online and available all the
 				time. No more scheduling conflicts!
 			</>
 		),
@@ -30,7 +30,7 @@ const FeatureList = [
 		Svg: require('../../static/img/better.svg').default,
 		description: (
 			<>
-				When a group makes a decision collectively, its judgment can be keener
+				When a group makes a decision collectively, its judgement can be keener
 				than an individual. Through discussion, and collaboration, groups can
 				identify more complete and robust solutions.
 			</>
