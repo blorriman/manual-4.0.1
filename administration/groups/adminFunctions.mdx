@@ -12,6 +12,8 @@ As the **Admin** of the Group, there are a number of functions to help with orga
 	<img src={useBaseUrl('/img/administration/admin-1.jpg')} />
 </center>
 
+---
+
 ### Rename Groups
 
 Renaming a Group can be done at any time.
@@ -26,33 +28,51 @@ Renaming a Group can be done at any time.
 
 **Group Resources** are files that are specific to the Group _(rather than an Activity)_ such as Bylaws, Rules & Regulations, etc.
 
-Uploading the files is the same as [Adding Files to Submissions](../../docs/started/generalUsage#add-files-to-submissions)
+Uploading files is the same as [Adding Files to Submissions](../../docs/started/generalUsage#add-files-to-submissions)
 
 <center>
 	<img src={useBaseUrl('/img/administration/resources-1.gif')} />
 </center>
 
+:::note Note
+They are archived separately.
+:::
+
 ---
 
 ### Add Committees
 
-<div className='red-highlight'>
-	Bacon ipsum dolor amet chuck kielbasa beef ribs ham pastrami, chislic
-	burgdoggen short ribs meatball frankfurter. Fatback pork chop picanha jowl.
-	Landjaeger jerky swine buffalo pancetta turkey beef pastrami boudin. Meatball
-	brisket pork chop pig swine hamburger tenderloin filet mignon tail. Leberkas
-	salami tri-tip hamburger tenderloin boudin.
-</div>
+**Committees** are sub-groups _(children)_ of the parent Group and are automatically [**affiliated**](../groups/affiliates) so that each _(affiliated)_ Group can email and refer [Discussions](../discussions/extend#refer-a-discussion) and [Meetings](../meetings/motions#referral-motion).
+
+When you create a **Committee**, you are automatically the Admin of the Group. Once you invite new Members, you can assign some one else as Admin and remove yourself from the Group _(if required)_.
+
+:::note Note
+Creating a Committee is the same procedure as [starting a Group](../groups/groups#start-a-group).
+:::
+
+<center>
+	<img src={useBaseUrl('/img/administration/newCommittee-1.gif')} />
+</center>
+
+---
 
 ### Set Quorum
 
-<div className='red-highlight'>
-	Bacon ipsum dolor amet chuck kielbasa beef ribs ham pastrami, chislic
-	burgdoggen short ribs meatball frankfurter. Fatback pork chop picanha jowl.
-	Landjaeger jerky swine buffalo pancetta turkey beef pastrami boudin. Meatball
-	brisket pork chop pig swine hamburger tenderloin filet mignon tail. Leberkas
-	salami tri-tip hamburger tenderloin boudin.
-</div>
+**Quorums** are important for validating the results of [**Motions**](../meetings/motions). **LORROS** automatically sets the Quorum at 51% of the voting Members; however, the Admin can overide the default and set the Quorum either as a percentage of the voting members or a fixed number of voting Members.
+
+:::warning Attention
+Since the fixed Quorum can never be less than the number of voting Members, **LORROS** will automatically adjust the Quorum to the lower of the fixed Quorum or the number of voting Members in the event that Members resign _(or are [removed](../groups/members#remove-member))_.
+:::
+
+<center>
+	<img src={useBaseUrl('/img/administration/quorum-1.gif')} />
+</center>
+
+:::note Note
+You can always revert back to the default _(51%)_ at any time by using the switch.
+:::
+
+---
 
 ### Deleting a Group
 
