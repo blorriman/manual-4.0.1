@@ -13,3 +13,15 @@ An **Abstain** vote is **NOT** counted as a vote cast and therefore not included
 - **Failed** when **Opposed** votes are equal to, or greater than 50% of the total votes. A tie vote **Fails** _(as per Robert's Rules of Order)_.
 
 - **Not Considered** when a motion does not reach Quorum _(as described above)_.
+
+A Member who chooses to abstain is considered to have participated in the vote. If there are not enough Members participating _(to reach Quorum)_ the Motion is not considered.
+
+An example of all of this: a Group has 9 voting Members, the **Quorum** is 5
+
+| Participating Members | For       | Against   | Abstain   | Result                                    |
+| --------------------- | --------- | --------- | --------- | ----------------------------------------- |
+| 7 members             | 4 members | 3 members | 0 members | <span className="pass"><b>pass</b></span> |
+| 8 members             | 4 members | 4 members | 0 members | <span className="fail"><b>fail</b></span> |
+| 5 members             | 2 members | 1 member  | 2 members | <span className="pass"><b>pass</b></span> |
+| 5 members             | 1 member  | 0 member  | 4 members | <span className="pass"><b>pass</b></span> |
+| 4 members             | 3 members | 1 member  | 0 members | <b>not considered</b>                     |

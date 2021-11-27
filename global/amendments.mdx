@@ -12,5 +12,16 @@ Once a Motion has been Moved and Seconded, any voting Member can **Amend the Mot
 
 The Member amending the Motion is the Mover and a Seconder is required before anyone can vote on the Amenendment.
 
-:::success Info
-To see how LORROS calculates voting _([click here](../during/voting))_
+## Amendment Priority Table
+
+**Amendments** work in reverse order - meaning, if the **2nd Amendment** passes - it is the recorded vote regardless if the **Motion** and the **1st Amendment** also pass ... and so is true for the **1st Amendment** - if it passes _(and the **2nd Amendment** fails, or is not present)_ it is the recorded vote regardless if the **Motion** also passes.
+
+| Motion                             | 1st Amendment                      | 2nd Amendment                      | Recorded Vote                  |
+| ---------------------------------- | ---------------------------------- | ---------------------------------- | ------------------------------ |
+| <span className="pass">pass</span> | <span className="pass">pass</span> | <span className="pass">pass</span> | <b>2nd</b>                     |
+| <span className="pass">pass</span> | <span className="pass">pass</span> | <span className="fail">fail</span> | <b>1st</b>                     |
+| <span className="pass">pass</span> | <span className="fail">fail</span> | <span className="fail">fail</span> | <b>Motion</b>                  |
+| <span className="fail">fail</span> | <span className="fail">fail</span> | <span className="fail">fail</span> | <b className="fail">Failed</b> |
+
+<!-- :::success Info
+To see how LORROS calculates voting _([click here](../during/voting#calculating-the-results))_ -->
